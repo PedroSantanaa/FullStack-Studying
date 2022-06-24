@@ -1,2 +1,2 @@
 # HTML FullStack Studying
- section of html studying
+ section of FULLSTACK studying
