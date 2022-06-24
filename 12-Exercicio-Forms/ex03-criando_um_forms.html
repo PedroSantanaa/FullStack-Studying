@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex03-Criando um Forms</title>
+</head>
+<body>
+    <h3>Cadastro da liga dos astronautas</h3>
+    <form action>
+        <div>
+            <!--Nome do usuario-->
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name"><br>
+        </div>
+        <br>        
+        <div>
+            <!--Email do usuario-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"> -
+            <!--Senha do usuario-->
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd"><br>
+        </div>
+        <br>
+        <div>
+            <!--Data de nascimento do usuario-->
+            <label for="birthday">Data de Nascimento:</label>
+            <input type="date" id="birthday" name="birthday" placeholder="dd/mm/aaaa"> -
+            <!--Foto do usuario-->
+            <label for="myfile">Foto:</label>
+            <input type="file" id="myfile" name="myfile"><br>
+        </div>
+        <br>
+        <div>
+            <!--Nacionalidade do usuario-->
+            <label for="nationality">Nacionalidade:</label>
+            <select name="nationality" id="nationality">
+                <option value="russian">Russa</option>
+                <option value="american">Americana</option>
+                <option value="brasilian">Brasileira</option>
+            </select> -            
+            <!--Genero do usuario-->
+            <label for="">Genero:</label>
+            <label for="F">F</label>
+            <input type="radio" id="F" name="genero" value="F">
+            <label for="M">M</label>
+            <input type="radio" id="M" name="genero" value="M"><br>
+        </div>        
+        <br>
+        <div>
+            <!--Principais Qualidades do usuario-->
+            <label for="qualidades">Suas principais qualidades:</label><br>
+            <input type="checkbox" id="q1" name="q1" value="Inteligência">
+            <label for="q1"> Inteligência | </label>
+            <input type="checkbox" id="q2" name="q2" value="Resiliência">
+            <label for="q2"> Resiliência | </label>
+            <input type="checkbox" id="q3" name="q3" value="Preparo fisico">
+            <label for="q3"> Preparo fisico | </label>
+            <input type="checkbox" id="q4" name="q4" value="Educação">
+            <label for="q4"> Educação | </label><br>
+        </div>
+        <br>        
+        <div>
+            <!--Espaço para texto do usuario-->
+            <textarea name="description" id="description" cols="30" rows="10" placeholder="Porque você gostaria de ser astronauta?"></textarea>
+        </div>
+        <br>
+        <div>
+            <!--Botao de enviar formulario-->
+            <input type="submit" value="Criar">
+        </div>
+        
+    </form>
+</body>
+</html>
