@@ -1,0 +1,16 @@
+.moon{
+    color: green;
+}
+h1{
+    font-size: 50px;
+    border-color: yellow;
+    border-width: 2px;
+    border-style: solid;
+}
+
+body{
+    background-color:white;
+    background-image:url('https://gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2022/03/spacex-Ptd-iTdrCJM-unsplash-scaled.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
