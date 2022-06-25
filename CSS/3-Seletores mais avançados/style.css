@@ -1,0 +1,7 @@
+h1+h3{
+    border: 2px solid blue;
+}
+
+a[href="/recibo"]{
+    color: red;
+}
