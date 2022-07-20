@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+}
+
+.onebitcode {
+    width: 200px;
+    height: auto;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttonHeader {
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    /* Como fazer animação */
+    cursor: pointer;
+    transition:0.4s;
+}
+
+.buttonHeader:hover {
+    border-color: #ff0044;
+}

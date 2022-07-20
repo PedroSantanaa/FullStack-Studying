@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: darkgray;
+    min-height: 100vh;
+    display: flex;
+    gap: 0px 15px;
+    /*Propriedades de alinhamento*/
+    justify-content: center;
+    align-items: center;
+    /* Responsividade */
+    flex-wrap: wrap;
+
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: white;
+    font-size: 20px;
+    display:flex;
+    justify-content:center;
+}
+
+/* .item-container{
+    text-align: center;
+} */
