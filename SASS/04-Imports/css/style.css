@@ -1,0 +1,19 @@
+.textBuy {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+}
+
+.Btn {
+  padding: 10px 15px;
+  border: 2px solid red;
+  background-color: #ff4;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.Btn:hover {
+  color: green;
+  border-color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */

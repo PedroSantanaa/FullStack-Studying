@@ -1,0 +1,17 @@
+.textBuy {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: $primary-color;
+}
+.Btn {
+  padding: 10px 15px;
+  border: 2px solid red;
+  background-color: $seconday-color;
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+    color: green;
+    border-color: blue;
+  }
+}
