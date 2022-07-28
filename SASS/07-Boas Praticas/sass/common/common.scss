@@ -1,0 +1,20 @@
+//Itens commons for all pages
+#title-home {
+  font-size: 46px;
+  font-family: sans-serif;
+}
+.btn {
+  width: 100px;
+  padding: 10px 0px;
+  background-color: $btn-background;
+  color: white;
+  border-radius: 20px;
+  display: block;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+    background-color: red;
+  }
+}

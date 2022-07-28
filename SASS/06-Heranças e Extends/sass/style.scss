@@ -1,0 +1,36 @@
+.btn {
+  width: 125px;
+  padding: 10px 0px;
+  border-radius: 20px;
+  display: block;
+  margin-top: 10px;
+  //Heranças
+  &.btn-purple {
+    background-color: purple;
+    color: white;
+  }
+  &.btn-yellow {
+    background-color: yellow;
+    color: black;
+  }
+  &.btn-blue {
+    background-color: blue;
+    color: white;
+  }
+}
+//Extends
+// .btn-purple {
+//   @extend .btn;
+//   background-color: purple;
+//   color: white;
+// }
+// .btn-yellow {
+//   @extend .btn;
+//   background-color: yellow;
+//   color: black;
+// }
+// .btn-blue {
+//   @extend .btn;
+//   background-color: blue;
+//   color: white;
+// }
