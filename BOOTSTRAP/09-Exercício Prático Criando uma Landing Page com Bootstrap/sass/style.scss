@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../Imagens/backgroundLp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  color: white;
+  margin: 0 auto;
+}
+.box {
+  background-color: #131212f1;
+  padding: 0px 30px;
+  margin: 0 auto;
+  width: 450px;
+  height: auto;
+}
+.img-fluid {
+  width: 250px;
+  height: auto;
+  padding: 20px;
+}
+.button {
+  text-align: center;
+  padding: 20px;
+}
+.fotter {
+  margin-top: 30px;
+  margin-bottom: -30px;
+  text-align: center;
+}
