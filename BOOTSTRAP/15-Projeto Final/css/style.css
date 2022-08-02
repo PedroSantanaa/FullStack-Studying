@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: black;
+  color: white;
+}
+
+.container00 {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container00.part1 {
+  background-image: url(../ImagensprojetoonebitX/home/01.jpg);
+}
+.container00.part2 {
+  background-image: url(../ImagensprojetoonebitX/home/03.jpg);
+}
+.container00.part3 {
+  background-image: url(../ImagensprojetoonebitX/home/02.gif);
+}
+.container00.part4 {
+  background-image: url(../ImagensprojetoonebitX/home/04.jpg);
+}
+
+.container.titles {
+  padding: 200px 0px;
+  padding-left: 170px;
+}
+
+.ShortTitle {
+  width: 500px;
+}
+
+.btn {
+  width: 170px;
+  height: 60px;
+  border: 2px solid white;
+}
+
+.header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding-left: 150px;
+}
+
+.footer ul {
+  color: white;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.logoobc {
+  width: 240px;
+}
+
+.arrow {
+  width: 80px;
+}
+
+@media (max-width: 750px) {
+  .ShortTitle {
+    width: auto;
+    font-size: 50px;
+  }
+}
+.body {
+  background-color: black;
+  color: white;
+}
+
+.container01 {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container01.part1 {
+  background-image: url(../ImagensprojetoonebitX/falcon9/01.jpg);
+}
+.container01.part2 {
+  background-image: url(../ImagensprojetoonebitX/falcon9/02.jpg);
+}
+.container01.part4 {
+  background-image: url(../ImagensprojetoonebitX/falcon9/08.jpg);
+}
+
+.container {
+  margin: 0px 79px;
+  padding: 0px 12px;
+}
+.container.titles2 {
+  text-align: center;
+  padding: 280px 0px;
+}
+
+.PrincipalText {
+  font-size: 120px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.SubTitle {
+  font-size: 30px;
+  margin-top: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.arrowDown {
+  width: 130px;
+}
+
+.Numbers {
+  display: flex;
+  height: 25vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.MediumTitle {
+  font-size: 18px;
+  width: 800px;
+}
+
+.containerRight {
+  margin-left: 50%;
+  padding-top: 15%;
+}
+
+.MainText {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.SideTitle {
+  font-size: 20px;
+}
+
+.containerLeft {
+  margin-left: -2%;
+  padding-top: 15%;
+}
+
+.Final {
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+@media (max-width: 1500) {
+  .container02 {
+    padding-left: 50px;
+  }
+}
+.body {
+  background-color: black;
+  color: white;
+}
+
+.container02 {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-left: 150px;
+}
+.container02.part1 {
+  background-image: url(../ImagensprojetoonebitX/humanFlight/01.jpg);
+}
+.container02.part2 {
+  background-image: url(../ImagensprojetoonebitX/humanFlight/02.jpg);
+}
+.container02.part3 {
+  background-image: url(../ImagensprojetoonebitX/humanFlight/03.jpg);
+}
+.container02.part4 {
+  background-image: url(../ImagensprojetoonebitX/humanFlight/04.jpg);
+}
+.container02.part5 {
+  background-image: url(../ImagensprojetoonebitX/humanFlight/05.jpg);
+}
+
+.container {
+  margin: 0px 79px;
+  padding: 0px 12px;
+}
+.container.titles2 {
+  text-align: center;
+  padding: 280px 0px;
+}
+
+.PrincipalText {
+  font-size: 120px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.SubTitle {
+  font-size: 30px;
+  margin-top: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.arrowDown {
+  width: 130px;
+}
+
+.desc {
+  display: flex;
+  height: 25vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.MediumTitle {
+  font-size: 18px;
+  width: 800px;
+}
+
+.containerRight {
+  margin-left: 50%;
+  padding-top: 15%;
+}
+
+.MainText {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.SideTitle {
+  font-size: 20px;
+}
+
+.containerLeft {
+  margin-left: -2%;
+  padding-top: 15%;
+}
+
+.Final {
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+@media (max-width: 1500) {
+  .container02 {
+    padding-left: 50px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

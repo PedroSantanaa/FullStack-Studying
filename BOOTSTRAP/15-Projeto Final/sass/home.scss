@@ -1,0 +1,74 @@
+.body {
+  background-color: black;
+  color: white;
+}
+
+.container00 {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &.part1 {
+    background-image: url(../ImagensprojetoonebitX/home/01.jpg);
+  }
+
+  &.part2 {
+    background-image: url(../ImagensprojetoonebitX/home/03.jpg);
+  }
+
+  &.part3 {
+    background-image: url(../ImagensprojetoonebitX/home/02.gif);
+  }
+
+  &.part4 {
+    background-image: url(../ImagensprojetoonebitX/home/04.jpg);
+  }
+}
+.container {
+  &.titles {
+    padding: 200px 0px;
+    padding-left: 170px;
+  }
+}
+.ShortTitle {
+  width: 500px;
+}
+.btn {
+  width: 170px;
+  height: 60px;
+  border: 2px solid white;
+}
+.header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding-left: 150px;
+}
+
+.footer ul {
+  color: white;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.logoobc {
+  width: 240px;
+}
+.arrow {
+  width: 80px;
+}
+@media (max-width: 750px) {
+  .ShortTitle {
+    width: auto;
+    font-size: 50px;
+  }
+}

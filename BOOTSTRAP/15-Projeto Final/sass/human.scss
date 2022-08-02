@@ -1,0 +1,89 @@
+.body {
+  background-color: black;
+  color: white;
+}
+.container02 {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-left: 150px;
+
+  &.part1 {
+    background-image: url(../ImagensprojetoonebitX/humanFlight/01.jpg);
+  }
+
+  &.part2 {
+    background-image: url(../ImagensprojetoonebitX/humanFlight/02.jpg);
+  }
+
+  &.part3 {
+    background-image: url(../ImagensprojetoonebitX/humanFlight/03.jpg);
+  }
+
+  &.part4 {
+    background-image: url(../ImagensprojetoonebitX/humanFlight/04.jpg);
+  }
+
+  &.part5 {
+    background-image: url(../ImagensprojetoonebitX/humanFlight/05.jpg);
+  }
+}
+.container {
+  margin: 0px 79px;
+  padding: 0px 12px;
+
+  &.titles2 {
+    text-align: center;
+    padding: 280px 0px;
+  }
+}
+
+.PrincipalText {
+  font-size: 120px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.SubTitle {
+  font-size: 30px;
+  margin-top: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.arrowDown {
+  width: 130px;
+}
+.desc {
+  display: flex;
+  height: 25vh;
+  justify-content: center;
+  align-items: center;
+}
+.MediumTitle {
+  font-size: 18px;
+  width: 800px;
+}
+.containerRight {
+  margin-left: 50%;
+  padding-top: 15%;
+}
+.MainText {
+  font-size: 70px;
+  font-weight: bold;
+}
+.SideTitle {
+  font-size: 20px;
+}
+
+.containerLeft {
+  margin-left: -2%;
+  padding-top: 15%;
+}
+.Final {
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+@media (max-width: 1500) {
+  .container02 {
+    padding-left: 50px;
+  }
+}
