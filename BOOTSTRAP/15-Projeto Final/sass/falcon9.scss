@@ -104,8 +104,85 @@
   margin-top: 20%;
   margin-bottom: 20%;
 }
-@media (max-width: 1500) {
-  .container02 {
-    padding-left: 50px;
+@media (max-width: 915px) {
+  .containerLeftText,
+  .containerLeftTables {
+    margin: 0px 150px;
+  }
+  .Paragraph {
+    width: auto;
+    font-size: 15px;
+    line-height: 40px;
+  }
+  .Cutting {
+    font-size: 50px;
+  }
+  .Text {
+    font-size: 15px;
+  }
+  .PrincipalText9 {
+    font-size: 100px;
+  }
+  .SubTitle9 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 800px) {
+  .logoobc {
+    width: 180px;
+  }
+  .SideTitleTable {
+    font-size: 12px;
+    width: 300px;
+  }
+  .table {
+    width: 300px;
+  }
+  .containerLeftText,
+  .containerLeftTables {
+    margin: 0px 150px;
+  }
+  .Paragraph {
+    width: auto;
+    font-size: 15px;
+    line-height: 40px;
+  }
+  .Cutting {
+    font-size: 50px;
+  }
+  .Text {
+    font-size: 15px;
+  }
+  .PrincipalText9 {
+    font-size: 100px;
+  }
+  .SubTitle9 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 440px) {
+  .logoobc {
+    width: 150px;
+  }
+  .containerLeftText,
+  .containerLeftTables {
+    margin: 0px 60px;
+  }
+  .Paragraph {
+    width: auto;
+    font-size: 10px;
+    line-height: 40px;
+  }
+  .Cutting {
+    font-size: 30px;
+  }
+  .Text {
+    font-size: 10px;
+  }
+  .PrincipalText9 {
+    font-size: 100px;
+  }
+  .SubTitle9 {
+    font-size: 15px;
   }
 }

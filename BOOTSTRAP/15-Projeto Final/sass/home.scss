@@ -33,6 +33,7 @@
 }
 .ShortTitle {
   width: 500px;
+  font-size: 40px;
 }
 .btn {
   width: 170px;
@@ -48,6 +49,7 @@
 .footer ul {
   color: white;
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   flex-direction: row;
   justify-content: center;
@@ -69,6 +71,18 @@
 @media (max-width: 750px) {
   .ShortTitle {
     width: auto;
-    font-size: 50px;
+    font-size: 30px;
+  }
+  .logoobc {
+    width: 180px;
+  }
+}
+@media (max-width: 440px) {
+  .ShortTitle {
+    width: auto;
+    font-size: 20px;
+  }
+  .logoobc {
+    width: 150px;
   }
 }
