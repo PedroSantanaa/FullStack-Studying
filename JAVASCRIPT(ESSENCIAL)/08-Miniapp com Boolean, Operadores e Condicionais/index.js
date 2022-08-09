@@ -1,0 +1,13 @@
+const dayjs = require("dayjs");
+const customParseFormat = require("dayjs/plugin/customParseFormat");
+// import customParseFormat from "./node_modules/dayjs/plugin/customParseFormat";
+// console.log(customParseFormat);
+dayjs.extend(customParseFormat);
+console.log();
+let departureDateEntry = "12/04/1999";
+console.log();
+let departureDate = dayjs(departureDateEntry, "DD/MM/YYYY");
+console.log();
+console.log(departureDate);
+let date = dayjs();
+console.log(date);
