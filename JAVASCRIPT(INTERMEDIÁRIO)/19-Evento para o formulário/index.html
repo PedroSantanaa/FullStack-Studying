@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evento para o formulário</title>
+  </head>
+  <body>
+    <form onsubmit="save(event)">
+      <p>
+        <label for="">Nome:</label>
+        <input type="text" name="name" id="" />
+      </p>
+
+      <p>
+        <label for="">Programa em:</label>
+        <select name="programming-lang" id="">
+          <option value="JavaScript">JavaScript</option>
+          <option value="Ruby">Ruby</option>
+          <option value="Python">Python</option>
+          <option value="C#">C#</option>
+          <option value="Java">Java</option>
+        </select>
+      </p>
+      <button type="submit">Salvar</button>
+    </form>
+  </body>
+  <script src="./js/form-event.js"></script>
+</html>
