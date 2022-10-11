@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./index.js" defer></script>
+    <title>Tic tac Toe</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Tic-Tac-Toe</h1>
+        <div class="players">
+          <label for="player1">Player 1:</label>
+          <input type="text" name="player1" id="player1" />
+          <img src="./images/x-png-35409.png" alt="Ximg" class="img" />
+          <label for="player2">Player 2:</label>
+          <input type="text" name="player2" id="player2" />
+          <img src="./images/circle-icon-16059.png" alt="Oimg" class="img" />
+        </div>
+        <h3 id="playerTurn">Player turn:</h3>
+      </header>
+      <div class="btn">
+        <button id="btn1" class="gameKey" data-index="2"></button>
+        <button id="btn2" class="gameKey" data-index="1"></button>
+        <button id="btn3" class="gameKey" data-index="3"></button>
+        <button id="btn4" class="gameKey" data-index="4"></button>
+        <button id="btn5" class="gameKey" data-index="5"></button>
+        <button id="btn6" class="gameKey" data-index="6"></button>
+        <button id="btn7" class="gameKey" data-index="7"></button>
+        <button id="btn8" class="gameKey" data-index="8"></button>
+        <button id="btn9" class="gameKey" data-index="9"></button>
+      </div>
+      <h1 class="winnerPlayer"></h1>
+      <button class="restartGame">Restart Game</button>
+    </main>
+  </body>
+</html>

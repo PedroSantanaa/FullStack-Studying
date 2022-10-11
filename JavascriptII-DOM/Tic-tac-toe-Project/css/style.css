@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color: #212529;
+  --border-color: red;
+  --font-color: #f1f5f9;
+}
+.img {
+  width: 70px;
+}
+header {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.players {
+  font-size: 25px;
+  margin: 15px 10px;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+main {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+.btn {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  margin: 10px auto;
+}
+.gameKey {
+  /* box-shadow: 4px 4px 4px 4px var(--bg-color); */
+  border: 5px solid black;
+  width: 270px;
+  height: 200px;
+  cursor: pointer;
+}
+.gameKey:hover {
+  background-color: bisque;
+}
+#btn1,
+#btn2,
+#btn3 {
+  border-top: none;
+}
+#btn1,
+#btn4,
+#btn7 {
+  border-left: none;
+}
+#btn3,
+#btn6,
+#btn9 {
+  border-right: none;
+}
+#btn7,
+#btn8,
+#btn9 {
+  border-bottom: none;
+}
+.restartGame {
+  background-color: yellow;
+  width: 200px;
+  height: 80px;
+  padding: 10px 5px;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.restartGame:hover {
+  background-color: aqua;
+  box-shadow: 2px 2px 2px 2px aquamarine;
+}
