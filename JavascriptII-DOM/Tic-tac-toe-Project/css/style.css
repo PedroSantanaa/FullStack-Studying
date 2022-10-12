@@ -44,6 +44,7 @@ main {
 .gameKey {
   /* box-shadow: 4px 4px 4px 4px var(--bg-color); */
   border: 5px solid black;
+  font-size: 100px;
   width: 270px;
   height: 200px;
   cursor: pointer;
@@ -84,4 +85,12 @@ main {
 .restartGame:hover {
   background-color: aqua;
   box-shadow: 2px 2px 2px 2px aquamarine;
+}
+.gameKey X {
+  font-size: 60px;
+  color: black;
+}
+.gameKey O {
+  font-size: 35px;
+  color: black;
 }
