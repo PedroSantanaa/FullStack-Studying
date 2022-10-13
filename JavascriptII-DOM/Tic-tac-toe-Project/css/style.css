@@ -72,7 +72,7 @@ main {
 #btn9 {
   border-bottom: none;
 }
-.restartGame {
+#restartGame {
   background-color: yellow;
   width: 200px;
   height: 80px;
@@ -93,4 +93,7 @@ main {
 .gameKey O {
   font-size: 35px;
   color: black;
+}
+.winner {
+  background-color: green;
 }
