@@ -20,6 +20,11 @@ function renderTransactions(transactions) {
   const delet = new Image(20, 20);
   delet.src = "./img/escluir.png";
   delet.id = "delet-icon";
+  //Delete function
+  delet.addEventListener("click", (ev) => {
+    const target = ev.currentTarget.parentNode.parentNode;
+    console.log(target);
+  });
   value.append(edit, delet);
   //Put all 2 at the div
   transaction.append(reason, value);
@@ -68,10 +73,3 @@ function valueUpdate(transaction) {
   totalValue += parseFloat(transaction.value);
   value.textContent = `Amount:R$${totalValue}`;
 }
-
-//Delete function
-const imgClick = document.getElementById("delet-icon");
-imgClick.addEventListener("click", (ev) => {
-  const div = ev.target;
-  console.log(div);
-});
