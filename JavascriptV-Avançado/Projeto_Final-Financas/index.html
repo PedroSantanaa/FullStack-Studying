@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Projeto Finanças</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Controle de Finanças Pessoais</h1>
+    </div>
+    <div class="main">
+      <div class="box">
+        <div id="amount"></div>
+        <form>
+          <div>
+            <label for="name">Reason:</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div>
+            <label for="value">Value:</label>
+            <input type="text" name="value" id="value" />
+          </div>
+          <button id="submit">Submit</button>
+        </form>
+        <div class="transactions">
+          <h2>Transactions</h2>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

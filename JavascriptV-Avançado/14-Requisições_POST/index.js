@@ -25,6 +25,7 @@ async function fetchArticles() {
   const articles = await fetch("http://localhost:3000/articles").then((res) =>
     res.json()
   );
+
   articles.forEach(renderArticle);
 }
 
