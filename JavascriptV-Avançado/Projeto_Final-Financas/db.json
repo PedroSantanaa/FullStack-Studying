@@ -1,44 +1,14 @@
 {
   "transactions": [
     {
-      "id": 1,
-      "reason": "academia",
-      "value": "100"
+      "reason": "nov pix",
+      "value": "400",
+      "id": 1
     },
     {
-      "id": 2,
-      "reason": "short",
-      "value": "50"
-    },
-    {
-      "reason": "Cabelo",
-      "value": "250",
-      "id": 3
-    },
-    {
-      "reason": "pagamento",
-      "value": "100",
-      "id": 4
-    },
-    {
-      "reason": "pagamento do salao",
+      "reason": "acad",
       "value": "-200",
-      "id": 5
-    },
-    {
-      "reason": "bola",
-      "value": "-50",
-      "id": 6
-    },
-    {
-      "reason": "pedro",
-      "value": "12",
-      "id": 7
-    },
-    {
-      "reason": "tiago",
-      "value": "50",
-      "id": 8
+      "id": 2
     }
   ]
 }

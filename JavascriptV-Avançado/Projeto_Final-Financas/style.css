@@ -7,7 +7,8 @@
 }
 
 body {
-  background: rgb(182, 240, 167);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1003%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(235%2c 237%2c 239%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c124 C 57.6%2c130 172.8%2c161.4 288%2c154 C 403.2%2c146.6 460.8%2c66.6 576%2c87 C 691.2%2c107.4 748.8%2c247.4 864%2c256 C 979.2%2c264.6 1036.8%2c127.6 1152%2c130 C 1267.2%2c132.4 1382.4%2c240.4 1440%2c268L1440 560L0 560z' fill='rgba(215%2c 219%2c 223%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c501 C 96%2c470.6 288%2c355.6 480%2c349 C 672%2c342.4 768%2c462.6 960%2c468 C 1152%2c473.4 1344%2c394.4 1440%2c376L1440 560L0 560z' fill='rgba(172%2c 176%2c 181%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1003'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  /* background: rgb(182, 240, 167);
   background: radial-gradient(
     circle,
     rgba(182, 240, 167, 1) 0%,
@@ -15,7 +16,10 @@ body {
     rgba(27, 139, 78, 1) 52%,
     rgba(91, 249, 13, 1) 73%,
     rgba(68, 196, 5, 1) 100%
-  );
+  ); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .header {
   text-align: center;
@@ -33,7 +37,7 @@ body {
 }
 
 .box {
-  /* background-image: url("./img/money.jpg"); */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1109%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(74%2c 183%2c 120%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c605.012C117.701%2c621.902%2c247.849%2c604.716%2c341.729%2c531.741C433.544%2c460.371%2c451.218%2c333.438%2c490.283%2c223.905C525.98%2c123.816%2c568.091%2c25.434%2c560.095%2c-80.529C551.756%2c-191.044%2c512.097%2c-297.318%2c444.336%2c-385.019C374.115%2c-475.905%2c282.242%2c-553.653%2c171.373%2c-583.642C61.57%2c-613.343%2c-55.367%2c-590.637%2c-161.14%2c-548.794C-260.773%2c-509.38%2c-344.846%2c-440.184%2c-408.726%2c-354.163C-469.445%2c-272.4%2c-486.65%2c-172.028%2c-513.82%2c-73.876C-545.155%2c39.32%2c-627.897%2c157.635%2c-580.1%2c264.923C-532.339%2c372.131%2c-385.27%2c382.589%2c-284.022%2c441.947C-187.898%2c498.301%2c-110.295%2c589.185%2c0%2c605.012' fill='%2340a26a'%3e%3c/path%3e%3cpath d='M1440 1218.586C1565.047 1201.367 1586.9180000000001 1020.0409999999999 1683.166 938.374 1761.091 872.255 1889.8029999999999 876.707 1944.592 790.439 2000.801 701.935 1999.8809999999999 584.588 1972.058 483.502 1945.763 387.96799999999996 1865.155 322.51 1796.209 251.34300000000002 1731.061 184.096 1668.511 113.096 1580.989 79.83499999999998 1489.265 44.97799999999995 1390.4470000000001 46.76999999999998 1293.247 60.20600000000002 1182.649 75.495 1059.838 83.154 981.498 162.70600000000002 902.102 243.33100000000002 882.77 366.402 880.315 479.53 878.036 584.535 920.786 681.745 968.1990000000001 775.4639999999999 1013.963 865.925 1075.72 942.442 1149.616 1011.846 1238.016 1094.8719999999998 1319.858 1235.13 1440 1218.586' fill='%2360c089'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1109'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -97,3 +101,45 @@ form button {
   display: flex;
   gap: 10px;
 }
+
+/* Media query */
+@media (max-width: 470px) {
+  form {
+    width: 12rem;
+  }
+  form input {
+    width: 6rem;
+    font-size: 10px;
+  }
+  .header {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 430px) {
+  .header {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 390px) {
+  form {
+    width: 9rem;
+  }
+  form input {
+    width: 4rem;
+    font-size: 10px;
+  }
+  .header {
+    font-size: 12px;
+  }
+  #amount {
+    font-size: 23px;
+  }
+  .transaction {
+    font-size: 15px;
+  }
+  .transactions {
+    font-size: 15px;
+  }
+} ;
