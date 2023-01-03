@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { DescriptionWithLink } from "../../shared/descriptionWithLink";
 import { GrayImg } from "../../shared/gray-img";
 
+async function getSatellites(id) {
+  const response = await fetch(`http://localhost:3000/planetas/${id}.json`);
+  const data = response.json();
+  return data;
+}
 export const Planet = (props) => {
-  const names = ["a", "b", "c", "d"];
-  const satellites = names.map((name) => {
-    return <li>Satelite {name}</li>;
+  const [satellites, setSatellites] = useState([]);
+
+  useEffect(() => {
+    getSatellites(props.id).then((data) => {
+      setSatellites(data["satellites"]);
+    }, []);
   });
   let title;
   if (props.titleWithUnderline) {
@@ -22,8 +30,11 @@ export const Planet = (props) => {
       {title}
       <DescriptionWithLink text={props.description} link={props.link} />
       <GrayImg color={props.color} img_url={props.imgUrl} />
-      <h4>Satellites</h4>
-      <ul>{satellites}</ul>
+      <ul>
+        {satellites.map((satellite, index) => {
+          return <li key={index}>{satellite.name}</li>;
+        })}
+      </ul>
       <hr />
     </div>
   );
