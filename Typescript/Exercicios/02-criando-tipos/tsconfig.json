@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "target": "ESNEXT",
+    "outDir": "dist",
+    "watch": true
+  }
+}
