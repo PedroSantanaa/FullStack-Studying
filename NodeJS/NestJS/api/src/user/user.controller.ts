@@ -12,35 +12,37 @@ import {
 import { CreateUserDTO } from './dto/create-user.dto';
 import { ReplaceUserDTO } from './dto/replace-user.dto';
 import { UpdateUserDTO } from './dto/update-user.dto';
+import { UserService } from './user.service';
 
 @Controller('users')
 export class UserController {
+  constructor(private readonly userService: UserService) {}
   @Post()
   async create(@Body() body: CreateUserDTO) {
-    return { body };
+    return this.userService.create(body);
   }
 
   @Get()
   async readAll() {
-    return { users: [] };
+    return this.userService.readAll();
   }
 
   @Get(':id')
   async readOne(@Param('id', ParseIntPipe) id) {
-    return { user: {}, id };
+    return this.userService.readOne(id);
   }
 
   @Put(':id')
   async replace(@Param('id', ParseIntPipe) id, @Body() body: ReplaceUserDTO) {
-    return { body, id };
+    return this.userService.replace(id, body);
   }
   @Patch(':id')
   async update(@Param('id', ParseIntPipe) id, @Body() body: UpdateUserDTO) {
-    return { body, id };
+    return this.userService.update(id, body);
   }
 
   @Delete(':id')
   async delete(@Param('id', ParseIntPipe) id: number) {
-    return { id };
+    return this.userService.delete(id);
   }
 }
