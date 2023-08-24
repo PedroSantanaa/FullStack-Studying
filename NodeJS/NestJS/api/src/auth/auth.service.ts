@@ -1,13 +1,10 @@
-import {
-  BadRequestException,
-  Injectable,
-  NotFoundException,
-} from '@nestjs/common';
+import { BadRequestException, Injectable } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { User } from '@prisma/client';
 import { PrismaService } from 'src/prisma/prisma.service';
 import { AuthRegisterDTO } from './dto/auth-register-dto';
 import { UserService } from 'src/user/user.service';
+import * as bcrypt from 'bcrypt';
 
 @Injectable()
 export class AuthService {
@@ -61,6 +58,10 @@ export class AuthService {
     if (!user) {
       throw new Error('User not found');
     }
+    if (!bcrypt.compare(password, user.password)) {
+      throw new Error('Password incorrect');
+    }
+
     return this.createToken(user);
   }
 
