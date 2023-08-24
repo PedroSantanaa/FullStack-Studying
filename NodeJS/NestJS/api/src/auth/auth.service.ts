@@ -1,19 +1,55 @@
-import { Injectable } from '@nestjs/common';
+import {
+  BadRequestException,
+  Injectable,
+  NotFoundException,
+} from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
+import { User } from '@prisma/client';
 import { PrismaService } from 'src/prisma/prisma.service';
+import { AuthRegisterDTO } from './dto/auth-register-dto';
+import { UserService } from 'src/user/user.service';
 
 @Injectable()
 export class AuthService {
   constructor(
     private readonly jwtService: JwtService,
     private readonly prisma: PrismaService,
+    private readonly userService: UserService,
   ) {}
 
-  async createToken() {
-    //fdfd
+  createToken(user: User) {
+    return this.jwtService.sign(
+      {
+        id: user.id,
+        name: user.name,
+        email: user.email,
+      },
+      {
+        expiresIn: '7 days',
+        subject: user.id.toString(),
+        issuer: 'login',
+        audience: 'users',
+      },
+    );
   }
-  async checkToken(token: string) {
-    //ssdsds
+  checkToken(token: string) {
+    try {
+      const data = this.jwtService.verify(token, {
+        audience: 'users',
+        issuer: 'login',
+      });
+      return data;
+    } catch (e) {
+      throw new BadRequestException(e);
+    }
+  }
+  isValidToken(token: string) {
+    try {
+      this.checkToken(token);
+      return true;
+    } catch (e) {
+      return false;
+    }
   }
   async login(email: string, password: string) {
     const user = await this.prisma.user.findFirst({
@@ -25,8 +61,14 @@ export class AuthService {
     if (!user) {
       throw new Error('User not found');
     }
-    return user;
+    return this.createToken(user);
   }
+
+  async register(data: AuthRegisterDTO) {
+    const user = await this.userService.create(data);
+    return this.createToken(user);
+  }
+
   async forgotPassword(email: string) {
     const user = this.prisma.user.findFirst({
       where: {
@@ -40,7 +82,7 @@ export class AuthService {
   }
   async resetPassword(password: string, token: string) {
     const id = 0;
-    this.prisma.user.update({
+    const user = await this.prisma.user.update({
       where: {
         id,
       },
@@ -48,6 +90,6 @@ export class AuthService {
         password,
       },
     });
-    return true;
+    return this.createToken(user);
   }
 }

@@ -14,12 +14,12 @@ export class AuthController {
   ) {}
   @Post('login')
   async login(@Body() authLoginDTO: AuthLoginDTO) {
-    this.authService.login(authLoginDTO.email, authLoginDTO.password);
+    return this.authService.login(authLoginDTO.email, authLoginDTO.password);
   }
 
   @Post('register')
   async register(@Body() authRegisterDTO: AuthRegisterDTO) {
-    return this.userService.create(authRegisterDTO);
+    return this.authService.register(authRegisterDTO);
   }
 
   @Post('forgot-password')
